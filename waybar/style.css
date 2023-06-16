@@ -1,0 +1,262 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: FontAwesome, Fira Sans, sans-serif;
+    font-size: 12px;
+}
+
+window#waybar {
+    background-color: #202020;
+	color: #ebdbb2;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+*/
+
+window#waybar.termite {
+    background-color: #3F3F3F;
+}
+
+window#waybar.chromium {
+    background-color: #000000;
+    border: none;
+}
+
+button {
+	margin: 2px 2px;
+    background-color: #32302f;
+}
+
+button:hover {
+    background: inherit;
+}
+
+#workspaces button {
+    padding: 0 4px;
+    color: #ffffff;
+}
+
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#workspaces button.focused {
+    background-color: #eebd35;
+	color: #0d0e0f;
+}
+
+#workspaces button.urgent {
+    background-color: #704040;
+}
+
+#mode {
+    background-color: #64727D;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#language,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#mpd {
+    padding: 0 10px;
+	border-radius: 8px;
+	margin: 2px 0px;
+}
+
+#window,
+#workspaces {
+    margin: 0 4px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#clock {
+    background-color: #32302f;
+}
+
+#battery {
+    background-color: #32302f;
+}
+
+#battery.charging, #battery.plugged {
+    background-color: #98971a;
+	color: #0d0e0f;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+	color: #0d0e0f;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: #fb4934;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#cpu {
+    background-color: #32302f;
+}
+
+#memory {
+    background-color: #32302f;
+}
+
+#disk {
+    background-color: #32302f;
+}
+
+#backlight {
+    background-color: #32302f;
+}
+
+#network {
+    background-color: #32302f;
+}
+
+#network.disconnected {
+    background-color: #32302f;
+}
+
+#pulseaudio {
+    background-color: #32302f;
+}
+
+#pulseaudio.muted {
+    background-color: #fb4934;
+}
+
+#wireplumber {
+    background-color: #32302f;
+}
+
+#wireplumber.muted {
+    background-color: #fb4934;
+}
+
+#custom-media {
+    background-color: #32302f;
+    min-width: 100px;
+}
+
+#custom-media.custom-spotify {
+    background-color: #66cc99;
+}
+
+#custom-media.custom-vlc {
+    background-color: #ffa000;
+}
+
+#temperature {
+    background-color: #32302f;
+}
+
+#temperature.critical {
+    background-color: #404040;
+}
+
+#tray {
+    background-color: #32302f;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #705050;
+}
+
+#idle_inhibitor {
+    background-color: #404040;
+}
+
+#idle_inhibitor.activated {
+    background-color: #ecf0f1;
+    color: #2d3436;
+}
+
+#mpd {
+    background-color: #66cc99;
+    color: #2a5c45;
+}
+
+#mpd.disconnected {
+    background-color: #f53c3c;
+}
+
+#mpd.stopped {
+    background-color: #90b1b1;
+}
+
+#mpd.paused {
+    background-color: #51a37a;
+}
+
+#language {
+    background-color: #32302f;
+}
+
+#keyboard-state {
+    background-color: #32302f;
+    padding: 0 0px;
+    margin: 0 5px;
+    min-width: 16px;
+}
+
+#keyboard-state > label {
+    padding: 0 5px;
+}
+
+#keyboard-state > label.locked {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#scratchpad {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#scratchpad.empty {
+	background-color: transparent;
+}
