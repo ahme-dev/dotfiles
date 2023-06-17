@@ -6,8 +6,8 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad", "custom/media", "sway/window"],
-    "modules-center": ["clock", "sway/language"],
-    "modules-right": ["pulseaudio", "network", "backlight", "battery", "battery#bat2",  "tray"],
+    "modules-center": ["clock", "sway/language", "tray"],
+    "modules-right": ["pulseaudio", "network", "backlight", "battery", "battery#bat2"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,

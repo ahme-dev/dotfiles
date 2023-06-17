@@ -38,7 +38,17 @@ require('lazy').setup({
       'williamboman/mason-lspconfig.nvim',
 
       -- lsp status
-      { 'j-hui/fidget.nvim',       tag = 'legacy', opts = {} },
+      {
+        'j-hui/fidget.nvim',
+        tag = 'legacy',
+        config = function()
+          require('fidget').setup {
+            window = {
+              blend = 0,
+            }
+          }
+        end,
+      },
 
       -- dev neovim
       'folke/neodev.nvim',
@@ -151,11 +161,10 @@ require('lazy').setup({
   },
 
   -- kickstart plugins
-  require 'kickstart.plugins.autoformat',
-  -- require 'kickstart.plugins.debug',
+  require 'autoformat',
 
   -- custom plugins
-  { import = 'custom.plugins' },
+  { import = 'plugins' },
 }, {})
 
 -- tabs
