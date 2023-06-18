@@ -64,6 +64,7 @@ bindsym $mod+Escape exec swaynag -t warning -m 'You pressed the exit shortcut. D
 
 # keys fn
 
+bindsym Print exec grim -g "$(slurp)" - | wl-copy
 bindsym XF86MonBrightnessUp exec centerm light inc
 bindsym XF86MonBrightnessDown exec centerm light dec
 bindsym XF86AudioRaiseVolume exec centerm sound inc

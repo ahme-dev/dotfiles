@@ -160,9 +160,6 @@ require('lazy').setup({
     build = ':TSUpdate',
   },
 
-  -- kickstart plugins
-  require 'autoformat',
-
   -- custom plugins
   { import = 'plugins' },
 }, {})
