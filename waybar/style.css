@@ -101,20 +101,8 @@ button:hover {
 	color: #0d0e0f;
 }
 
-@keyframes blink {
-    to {
-        background-color: #ffffff;
-	color: #0d0e0f;
-    }
-}
-
 #battery.critical:not(.charging) {
     background-color: #fb4934;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
 label:focus {
