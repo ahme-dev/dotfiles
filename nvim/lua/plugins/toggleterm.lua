@@ -7,7 +7,7 @@ return {
 				start_in_insert = true,
 				insert_mappings = true,
 				persist_size = true,
-				direction = "float",
+				direction = "horizontal",
 				float_opts = {
 					border = "curved",
 					width = 120,

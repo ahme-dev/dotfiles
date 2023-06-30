@@ -9,7 +9,8 @@ return {
 				-- null_ls.builtins.formatting.deno_fmt,
 				null_ls.builtins.formatting.prettier,
 				null_ls.builtins.formatting.rustfmt,
-				null_ls.builtins.formatting.prismaFmt
+				null_ls.builtins.formatting.phpcsfixer,
+				-- null_ls.builtins.formatting.prismaFmt,
 			},
 			on_attach = function(client, parambuffer)
 				if client.supports_method("textDocument/formatting") then
