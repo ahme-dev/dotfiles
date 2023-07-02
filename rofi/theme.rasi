@@ -1,0 +1,83 @@
+window {
+	width:            30%;
+	height:           35%;
+    padding:          8;
+    text-color:       #eddbb2;
+    background-color: #242424;
+}
+
+prompt {
+    padding:          4;
+    text-color:       #eddbb2;
+	background-color: inherit;
+}
+
+entry {
+    padding:          4;
+    text-color:       #eddbb2;
+	background-color: inherit;
+}
+
+inputbar {
+	children: 		  [ prompt, entry ];
+    padding:          4;
+    text-color:       #eddbb2;
+	background-color: inherit;
+}
+
+listview {
+    columns:          1;
+    padding:          4;
+    cycle:            false;
+    dynamic:          true;
+    layout:           vertical;
+	background-color: inherit;
+}
+
+mainbox {
+    children:         [ inputbar, listview ];
+	background-color: inherit;
+}
+
+element {
+    padding:          4;
+    text-color:       #c1c1c1;
+	background-color: inherit;
+}
+
+element-icon {
+	padding:          0 4 0;
+    text-color:       inherit;
+    background-color: inherit;
+}
+
+element-text {
+    text-color:       inherit;
+    background-color: inherit;
+}
+
+element normal.urgent, element alternate.urgent {
+    text-color:       #c1c1c1;
+    background-color: #fb4934;
+}
+
+element normal.active, element alternate.active {
+    text-color:       #c1c1c1;
+    background-color: #212121;
+}
+
+element selected {
+	text-color:       #212121;
+	background-color: #fabd2f;
+}
+
+element selected.urgent {
+	text-color:       #212121;
+    background-color: #212121;
+}
+
+element selected.active {
+	text-color:       #c1c1c1;
+	background-color: #212121;
+}
+// vim:ft=css
